@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Senpre faca essa configuração padrão do site */
+
+html, body {
+    width: 100%vw;
+    height: 100%vh;
+}
+
+/* Essa tbm é padrão */
+
+body {
+    background: black url('Arquivos/pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachement: fixed;
+}
+
+/* Snepre colcoque uma cor no fundo da imagem */
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section.iphone {
+    background: url('Arquivos/pacote-d013/imagens/frame-iphone.png') no-repeat;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    transform: translate (-35%, -33%);
+    width: 311px;
+    height: 627px;
+}
+
+
+
+iframe.tela {
+    position: relative;
+    top: 11%;    
+    left: 7%;
+    width: 265px;
+    height: 485px;
+    
+}
+
+
+section.redes-sociais {
+    text-align: right;
+}
+
+
+section.redes-sociais img {
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #000000c4;
+}
+
+
+
+section.redes-sociais img:hover {
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px #000000c4;
+    transform: translate(-5px, -5px);
+    transition: transform .3s, border .1s;
+}
+
+
+
+/* position relative se adapita ao tamnho onde ele se encotra e
+posso configurar o top, left, bottom e right sek nenhum problema.
+
+position absolute também posso configurar o top, left, bottom e
+right. */
+
+
+/* Nos botões foram colocados uma borda branca e uma animação
+mas não com javascript e sim com CSS usando trasnform.
+
+trasform: translate(-5px, -5px) é para ter - 5px de topo e de esquerda, ou seja, afastar do seu eixo e ter + topo e left para quando clicar nele, ele se afasta.
+
+transition: trasform e border é para ter um tempo para ele se deslocar do eixo e a borda aparecer. */
